@@ -31,13 +31,13 @@ I followed the same steps to create a separate dataset for the 2022 candidates:
 
 **ps_all_scraped_2022_json.py** -> **ps_all_scraped_2022.json** -> **ps_allscraped_2022_csv.py** -> **ps_all_scraped_2022.csv**
 
-**ps_authors _2022_json.py** -> **ps_authors_2022.json** -> **ps_authors_2022_csv.py** -> **ps_authors_2022.csv**
+**ps_authors_2022_json.py** -> **ps_authors_2022.json** -> **ps_authors_2022_csv.py** -> **ps_authors_2022.csv**
 
 I also used OpenRefine to clean the data for the authors to create **ps_authors_2022_places.csv**. I wasn’t able to reconcile all the names and birthplaces, so I also manually added some entries and if I couldn’t find the place of birth I would use the author’s known city of residence.
 
 The [Premio Strega page for the 2022 candidates](https://premiostrega.it/PS/libri/) also included links to the [Libreria IBS](https://www.ibs.it/) (an online bookstore), which contained additional information on the 12 books nominated for this year’s edition so I scraped those pages too: 
 
-**ps_2022_ibs.py** -> **ps_2022_ibs.json**
+**ps_2022_ibs_json.py** -> **ps_2022_ibs.json**
 
 **ps_settings_2022.py** creates a Pandas DataFrame based on the information I found for the settings of these novels and writes to the **ps_settings_2022.csv**. The file was uploaded to OpenRefine to reconcile the locations and retrieve the coordinates (**ps_coordinates_2022.csv**). 
 
